@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Power Supply Prediction</h1>
+    <form action="{{ url_for('home')}}" method="post">
+        <label>Enter Datetime :</label>
+        <input type="text" name="Datetime" placeholder="YYYY-MM-DD HH:MM:SS">
+    <h3>Entered Datetime : {{date}}</h3>
+    <h3>Predicted Power Supply : {{result}}</h3>
+    
+</body>
+</html>
