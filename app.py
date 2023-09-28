@@ -26,6 +26,7 @@ def home():
 
         loaded_model = pickle.load(open('random_forest_model.pkl', 'rb'))
         predicted_power=predict_power_supply_demand(loaded_model,datetime)
+        predicted_power=predicted_power[0]
 
         return render_template('index.html',date=datetime,result=predicted_power)
 if __name__=='__main__':
